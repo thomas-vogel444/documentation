@@ -34,7 +34,7 @@ val collection = db.getCollection("myCollection")
 ### Insert documents
 
 ```scala
-val document = Document("name" <- "Thomas", "age" <- 32)
+val document = Document("name" -> "Thomas", "age" -> 32)
 collection.insertOne(document).toFuture()
 collection.insertMany(...).toFuture()
 ```
