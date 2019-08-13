@@ -1,0 +1,25 @@
+# SSH Agent Forwarding
+
+Allows you to use SSH to connect without having to use the `-i <keyfile>` option when you connect or uploading the private key to a bastion instance.
+
+## Adding private keys to ssh agent
+
+Add the private key to the SSH agent
+```
+ssh-add -K <private-key>
+```
+
+View the private keys in the agent
+```
+ssh-add -L
+```
+
+ssh unto the bastion
+```
+ssh -A <user>@<bastion-ip>
+```
+
+From the bastion ssh unto the instance in the private subnet
+```
+ssh <user>@<private-instance-ip>
+```
