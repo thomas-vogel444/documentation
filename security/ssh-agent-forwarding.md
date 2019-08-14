@@ -2,6 +2,8 @@
 
 Allows you to use SSH to connect without having to use the `-i <keyfile>` option when you connect or uploading the private key to a bastion instance.
 
+SSH Agent will try 5 keys sequentially. Since instance terminate the connection after 5 tries, ensure that you have 5 or fewer keys added to the agent.
+
 ## Adding private keys to ssh agent
 
 Add the private key to the SSH agent
