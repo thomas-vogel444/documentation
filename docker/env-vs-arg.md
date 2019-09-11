@@ -2,7 +2,7 @@
 
 From https://vsupalov.com/docker-arg-vs-env/
 
-Note that the `docker build` output leaves the referenced `ENV` and `ARG` unresolved despite actually resolving them in the actual build.
+Note that the `docker build` output leaves the referenced `ENV` and `ARG` unresolved despite actually resolving them in the actualbuild.
 
 Differences:
 - ENV
